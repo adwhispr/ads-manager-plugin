@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "adwhispr-ads-manager": {
+      "type": "http",
+      "url": "https://adwhispr.com/api/ads-manager/mcp"
+    }
+  }
+}
