@@ -33,4 +33,6 @@ Every campaign is created paused. Nothing spends until you resume it.
 
 Looking for competitor research as well? The broader [AdWhispr Ads & Marketing Agent](https://github.com/basilnas/adwhispr-claude-plugin) plugin adds any brand's live ads, verified competitor discovery and keyword data.
 
-Support: basil@adwhispr.com. Docs: https://adwhispr.com/docs.
+Documentation: https://adwhispr.com/docs
+
+Support: https://adwhispr.com/support or basil@adwhispr.com
