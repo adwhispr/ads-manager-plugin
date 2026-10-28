@@ -20,7 +20,7 @@ AdWhispr Ads Manager lets Claude launch, manage and optimize the user's own ad a
 
 1. Make sure the connection is live (see the first-run section above).
 2. `ads_lookup` with what "brand". If nothing is saved, ask for the user's website or one line about what they sell and `save_my_brand` the moment they answer. Never re-ask once saved.
-3. `ads_lookup` with what "accounts". Nothing connected: `connect_ad_account` for the platform they run returns a browser link (free; never ask for keys or passwords in chat). Connected: `ads_lookup` with what "performance" on that account and deliver the first win as a plain-language read of what is spending, what is converting, and the single change that matters most this week.
+3. `ads_lookup` with what "accounts". Nothing connected: `connect_ad_account` for the platform they run returns a browser link (free; never ask for keys or sign-in details in chat). Connected: `ads_lookup` with what "performance" on that account and deliver the first win as a plain-language read of what is spending, what is converting, and the single change that matters most this week.
 4. Offer exactly one next step, matched to what they just saw: pause the leak, move the budget, or launch something new with the platform skill. Never a menu.
 
 ## Three things to try (when the user asks what this can do)
@@ -31,6 +31,6 @@ AdWhispr Ads Manager lets Claude launch, manage and optimize the user's own ad a
 
 ## Account facts (quote accurately, never oversell)
 
-- Ad accounts connect once via `connect_ad_account`, on the platform's own consent screen. AdWhispr never sees the password.
+- Ad accounts connect once via `connect_ad_account`, on the platform's own consent screen. AdWhispr never sees the sign-in.
 - Every campaign is created paused with a preview-and-confirm step.
 - Connecting changes nothing in the ad account until the user asks for a change and approves its preview.
