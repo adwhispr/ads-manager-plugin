@@ -20,7 +20,7 @@ If the adwhispr-ads-manager server shows as needing authentication, or a tool ca
 
 ## Launching: `launch_social_ad` platform tiktok
 
-- cards: 1 video by creativeName or creativeId from `ads_lookup` with what "creatives" (pass tiktokAccountId to also see the videos already in the TikTok asset library), or a videoUrl the user owns; 2 to 5 videos = creative test. Vertical video, 5 seconds or longer.
+- cards: 1 video by creativeName or creativeId from `ads_lookup` with what "creatives" (set tiktokAccountId to also see the videos already in the TikTok asset library), or a videoUrl the user owns; 2 to 5 videos = creative test. Vertical video, 5 seconds or longer.
 - message is the caption: 100 characters or fewer, no emoji. link, ctaType (LEARN_MORE default, SHOP_NOW, SIGN_UP, DOWNLOAD_NOW).
 - dailyBudgetUsd: TikTok's minimum is 20 in the account currency.
 - objective: traffic (default), sales (pixelId from `ads_lookup` with what "targeting", platform tiktok, kind pixels; optimizationEvent usually auto-picked), awareness, video_views.
@@ -35,6 +35,6 @@ If the adwhispr-ads-manager server shows as needing authentication, or a tool ca
 
 - Every campaign is created PAUSED. Nothing spends until the user resumes it.
 - Launch tools and `manage_campaign` resume, update, locations, keywords and add_negatives are TWO-STEP: the first call returns a preview plus a confirmToken; show the preview, get the user's explicit OK, then call again with the same args plus that token. Never invent a token.
-- Resume starts real spend. Surface its warning and confirm before passing the token.
+- Resume starts real spend. Surface its warning and confirm before sending the token.
 - Report only numbers the tools return; never invent CTR, CPC, ROAS or conversion figures. Currency follows the ad account's billing currency; label it when not USD.
 - If a tool returns a link instead of running (an account step, an upgrade), relay the link as returned and stop there.

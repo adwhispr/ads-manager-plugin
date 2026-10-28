@@ -37,7 +37,7 @@ Local businesses win on intent and distance: people searching for the service ri
 
 - Every campaign is created PAUSED. Nothing spends until the user resumes it.
 - Launch tools and `manage_campaign` resume, update, locations, keywords and add_negatives are TWO-STEP: the first call returns a preview plus a confirmToken; show the preview, get the user's explicit OK, then call again with the same args plus that token. Never invent a token.
-- Resume starts real spend. Surface its warning and confirm before passing the token.
+- Resume starts real spend. Surface its warning and confirm before sending the token.
 - Report only numbers the tools return; never invent CTR, CPC, ROAS or conversion figures. Currency follows the ad account's billing currency; label it when not USD.
 - If a tool returns a link instead of running (an account step, an upgrade), relay the link as returned and stop there.
 

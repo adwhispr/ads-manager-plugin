@@ -19,7 +19,7 @@ This is the generalist workflow for "manage my ads". It reads first, proposes on
 ## The loop
 
 1. `ads_lookup` with what "accounts". Nothing connected: `connect_ad_account` for the platform they run returns a browser link.
-2. `ads_lookup` with what "campaigns" for what exists (name, status, budget, id), then what "performance" for real spend, impressions, clicks and conversions. Pass a campaignId to drill into one campaign; on Google Search that adds keyword-level diagnostics (Quality Score, bids below the first-page estimate, keywords rarely shown). What "account_status" shows ad-level status and review blockers on Meta.
+2. `ads_lookup` with what "campaigns" for what exists (name, status, budget, id), then what "performance" for real spend, impressions, clicks and conversions. Add a campaignId to drill into one campaign; on Google Search that adds keyword-level diagnostics (Quality Score, bids below the first-page estimate, keywords rarely shown). What "account_status" shows ad-level status and review blockers on Meta.
 3. Diagnose in plain language: what is spending, what is converting, and the single change that matters most this week. Typical leaks: a campaign spending with no conversions, a Search campaign barely spending because bids sit below the first-page estimate, budget concentrated on the wrong goal, a Meta ad set reaching strangers.
 4. Propose ONE change with the numbers behind it. Then, only on the user's explicit yes, `manage_campaign`:
    - action pause to stop a leak (single step).
@@ -37,7 +37,7 @@ Hand off to the platform skill: google-ads, meta-ads, tiktok-ads, x-ads, chatgpt
 
 - Every campaign is created PAUSED. Nothing spends until the user resumes it.
 - Launch tools and `manage_campaign` resume, update, locations, keywords and add_negatives are TWO-STEP: the first call returns a preview plus a confirmToken; show the preview, get the user's explicit OK, then call again with the same args plus that token. Never invent a token.
-- Resume starts real spend. Surface its warning and confirm before passing the token.
+- Resume starts real spend. Surface its warning and confirm before sending the token.
 - Report only numbers the tools return; never invent CTR, CPC, ROAS or conversion figures. Currency follows the ad account's billing currency; label it when not USD.
 - If a tool returns a link instead of running (an account step, an upgrade), relay the link as returned and stop there.
 
