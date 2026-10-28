@@ -53,5 +53,6 @@
   ],
   "icon": "./icon.svg",
   "privacyPolicyUrl": "https://adwhispr.com/privacy",
+  "termsOfServiceUrl": "https://adwhispr.com/terms",
   "mcpServers": "./.mcp.json"
 }
