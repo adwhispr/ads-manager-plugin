@@ -52,5 +52,11 @@
     "connector"
   ],
   "icon": "./icon.svg",
-  "privacyPolicyUrl": "https://adwhispr.com/privacy"
+  "privacyPolicyUrl": "https://adwhispr.com/privacy",
+  "mcpServers": {
+    "adwhispr-ads-manager": {
+      "type": "http",
+      "url": "https://adwhispr.com/api/ads-manager/mcp"
+    }
+  }
 }
