@@ -26,7 +26,7 @@ Every campaign is created paused. Nothing spends until you resume it.
 
 ## Safety
 
-- Ad accounts connect through each platform's own consent screen. AdWhispr never sees your password and never asks for API keys in chat.
+- Ad accounts connect through each platform's own consent screen. AdWhispr never sees your sign-in and never asks for API keys in chat.
 - Every launch, budget change, targeting change and resume shows a preview first and applies only after you confirm.
 - Numbers come from your ad accounts. The plugin never invents metrics.
 - Data flows only to AdWhispr's own API. No hooks, no local code.

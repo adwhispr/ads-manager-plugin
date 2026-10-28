@@ -14,7 +14,7 @@ If the adwhispr-ads-manager server shows as needing authentication, or a tool ca
 3. Tell them the payoff: "connecting takes one click on your ad platform's own sign-in screen, and the moment it is done I can read your real campaigns."
 4. After they connect, continue right where the request left off.
 
-Every platform connects on its own consent screen; AdWhispr never sees the user's password and never asks for keys in chat.
+Every platform connects on its own consent screen; AdWhispr never sees the user's sign-in and never asks for keys in chat.
 
 ## How it works, per platform
 
